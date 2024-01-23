@@ -13,7 +13,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-
+i = 1
+j = 1
+if(i+j === 3){
+  console.log('true')
+}
 var admin = require("firebase-admin");
 
 var serviceAccount = require("./adminsdk.json");
